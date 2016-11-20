@@ -1,0 +1,199 @@
+/*shower*/
+.badge a {
+  background-color: #2c8fe6;
+}
+
+.caption {
+  text-shadow: none;
+}
+
+.shower.list {
+  background-color: #fff;
+}
+
+.slide::after {
+  background-color: #f52757;
+  background: url("pictures/poly-ribbon.svg") no-repeat;
+}
+
+.slide i {
+  font-style: normal;
+}
+
+.progress {
+  border-color: #2c8fe6;
+  border-right-color: transparent;
+}
+
+header h1 {
+  color: #000;
+}
+
+header p {
+  color: #1e88e5;
+}
+
+h3 {
+  font-size: 32px;
+  color: #444;
+}
+/*#cover*/
+#cover .cover {
+  padding: 160px;
+  opacity: 0.4;
+}
+
+#cover {
+  padding-top: 186px;
+}
+
+#cover h2 {
+  margin: 30px 0 0;
+  color: #000;
+  text-align: center;
+  font-size: 120px;
+}
+
+#cover p {
+  margin: 10px 0 0;
+  color: #000;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+
+#cover .bottom-panel {
+  display: flex;
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cover .author-info {
+  display: inline-flex;
+  align-items: center;
+}
+
+#cover .author-info > a {
+  background: none;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+#cover .livestream-icon {
+  width: 70px;
+  height: 70px;
+}
+
+#cover .date {}
+
+#cover .wsd-logo {
+  width: 300px;
+  height: 43px;
+}
+/*slide-ls*/
+.slide-ls,
+.slide-ls h3 {
+  color: #fff;
+}
+
+.slide-ls .cover {
+  filter: brightness(0.4);
+}
+
+.slide-ls .livestream-logo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: auto;
+}
+
+.livestream-mission {
+  text-align: center;
+}
+
+.livestream-mission h3 {
+  font-size: 46px;
+}
+
+.livestream-mission p {
+  font-size: 36px;
+}
+
+.livestream-mission hr {
+  border: 0;
+  height: 2px;
+  color: #fff;
+  font-size: 0;
+  width: 50%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), #fff, rgba(255, 255, 255, 0.1));
+  margin-bottom: 16px;
+}
+
+.project-webcontrol {}
+
+.webcontrol-cloud {
+  display: inline-block;
+  text-align: center;
+  margin-left: 60px;
+}
+
+.webcontrol-screenshot {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  width: 545px;
+  height: auto;
+}
+/*slide-web-components*/
+.slide-web-components .lego-blocks {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+/*tweet*/
+.tweet {
+  max-width: 90%;
+  height: auto;
+}
+/*browser-support*/
+.slide table td,
+.slide table tr:first-child th {
+  text-align: center;
+}
+
+.slide table tr:not(:first-child) th {
+  text-align: right;
+}
+
+.cover-logo-polymer {
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.source-link {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link-more {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+
+.logo-icon {
+  width: auto;
+  height: 24px;
+}
+
+.font-smaller {
+  font-size: 20px;
+}

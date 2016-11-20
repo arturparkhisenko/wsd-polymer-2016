@@ -1,0 +1,21 @@
+{
+  "name": "wsd-polymer-2016",
+  "version": "1.0.0",
+  "main": "index.html",
+  "authors": [
+    "Artur Parkhisenko <ikeagold@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "dist/.*",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0",
+    "polymer": "^1.7.0"
+  }
+}

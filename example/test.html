@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>polymer</title>
+  <script src="https://polygit.org/components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link href="https://polygit.org/components/polymer/polymer.html" rel="import">
+  <!-- <base href="https://crossorigin.me/https://polygit.org/polymer+:master/components/"> -->
+  <!-- <link href="polymer/polymer.html" rel="import"> -->
+</head>
+
+<body>
+
+  <dom-module id="x-test">
+    <template>
+        <style>
+        </style>
+        <div id="test">Test</div>
+      </template>
+  </dom-module>
+
+  <script>
+    Polymer({
+      is: 'x-test'
+    });
+    var el = document.querySelector('x-test');
+    console.log('Props:');
+    for (var k in el) {
+      if (el.hasOwnProperty(k))
+        console.log(k);
+    }
+  </script>
+
+  <x-test></x-test>
+</body>
+
+</html>
