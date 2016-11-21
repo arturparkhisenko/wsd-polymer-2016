@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>wsd-logo demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../wsd-logo.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles"></style>
+    <style>
+      .demo-snippet {
+        background-color: #eee !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic wsd-logo demo</h3>
+      <demo-snippet>
+        <template>
+          <wsd-logo></wsd-logo>
+          <wsd-logo color="dark" width="32px"></wsd-logo>
+          <wsd-logo color="light" width="32px"></wsd-logo>
+          <wsd-logo color="mono" width="32px"></wsd-logo>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

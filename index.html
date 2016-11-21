@@ -8,15 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="pictures/p-logo-32.png">
   <link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-  <script src="bower_components/polymer/polymer.html"></script>
+  <link rel="import" href="bower_components/wsd-logo/wsd-logo.html">
   <link rel="stylesheet" href="styles.css">
 </head>
-
-<!-- TODO
-  http://getbootstrap.com/examples/theme/ - as compponents example?
--->
 
 <body class="shower list">
 
@@ -31,8 +26,7 @@
 
     <div class="bottom-panel">
       <div class="author-info">
-        <img class="livestream-icon" src="pictures/livestream-icon.png" alt="Livestream">
-        <a href="https://github.com/arturparkhisenko/" title="GitHub Profile"><i class="fa fa-github-square" aria-hidden="true"></i> @<strong>artur</strong>parkhisenko</a>
+        <img class="livestream-icon" src="pictures/livestream-icon.png" alt="Livestream"> <strong>artur</strong>parkhisenko
       </div>
       <span class="date">2016-11-26, Kyiv</span>
       <img class="wsd-logo" src="pictures/wsd-light-ru.svg" alt="wsd" />
@@ -73,15 +67,30 @@
   </section>
 
   <section class="slide slide-web-components">
+    <!-- details and summary element -->
+    <!-- picture element and srcset -->
+    <!-- Пример - тег select/input/video/audio/code/etc.. -->
+    <img class="cover" src="pictures/bootstrap-components.png" alt="Polymer">
+  </section>
+
+  <section class="slide slide-web-components">
+    <h2>Под капотом у тега &lt;video&gt;</h2>
+    <img class="cover" src="pictures/video-example.png" alt="Polymer">
+  </section>
+
+  <section class="slide slide-web-components">
     <h2>Веб-компоненты</h2>
     <!-- Сама идеология компонентов давно всем знакома -->
+    <!-- Дмитрий Глазков, идея еще с 2010 года -->
     <!-- Спецификация веб-компонентов появилась впервые в 2011 году -->
-    <p>Это возможность создавать пользовательские, инкапсулируемые, переиспользуемые компоненты, использующие веб-платформу,<br> в основе которых лежат эти спецификации:</p>
+    <p>Это возможность создавать пользовательские, инкапсулируемые, переиспользуемые компоненты, использующие веб-платформу.</p>
+    <p class="next">В основе веб-компонентов лежат эти спецификации:</p>
     <ul>
-      <li class="next"><strong>Custom Elements</strong> - Пользовательские элементы</li>
-      <li class="next"><strong>HTML Templates</strong> - Шаблоны</li>
       <li class="next"><strong>Shadow Dom</strong> - Теневой DOM</li>
       <li class="next"><strong>HTML Imports</strong> - Импорт HTML</li>
+      <!-- основные фичи связаны с templates и custom elements -->
+      <li class="next"><strong>HTML Templates</strong> - Шаблоны</li>
+      <li class="next"><strong>Custom Elements</strong> - Пользовательские элементы</li>
     </ul>
     <img class="lego-blocks" src="pictures/lego-261x300.png" alt="Lego Blocks">
     <!-- Пример - тег select/input/video/audio/code/etc.. -->
@@ -153,7 +162,7 @@
 
     <br>
 
-    <p class="next">Проект Polymer - это набор библиотек и утилит для веб-разработчиков.</p>
+    <p class="next"><strong>Проект Polymer</strong> - это набор библиотек и утилит для веб-разработчиков.</p>
 
     <p class="next">Библиотека Polymer созданная для того, чтобы упростить работу с нативными API веб-платформы.</p>
 
@@ -163,9 +172,9 @@
   <section class="slide">
     <h2>Polymer утилиты и Polymer-cli</h2>
 
-    <p class="next">Polymer App Toolbox - это коллекция готовых веб-компонентов, утилит и шаблонов для создания <em>Прогрессивных Веб Приложений</em> с библиотекой Polymer (пример: роутинг, локализация, хранилище, лэйауты, polygit-cdn).</p>
+    <p class="next"><strong>Polymer App Toolbox</strong> - это коллекция готовых веб-компонентов, утилит и шаблонов для создания <em>Прогрессивных Веб Приложений</em> с библиотекой Polymer (пример: роутинг, локализация, хранилище, лэйауты, polygit-cdn).</p>
 
-    <p class="next">Polymer-cli - консольная утилита, которая включает в себя инструменты сборки, генерации, линтер, сервер для разработки и тест раннер.</p>
+    <p class="next"><strong>Polymer-cli</strong> - консольная утилита, которая включает в себя инструменты сборки, генерации, линтер, сервер для разработки и тест раннер.</p>
 
     <p class="next">Дополнительные инструменты Polymer, такие как: polyserve, polylint, Web component tester, polybuild (vulcanize, crisper, polyclean).</p>
 
@@ -197,16 +206,16 @@
   <section class="slide">
     <h2>Сравнение с конкурентами</h2>
 
-    <p class="next"><img class="logo-icon" src="pictures/polymer.svg" alt="Polymer"> Polymer &gt; всех по размеру и пока только в Bower (v2 обещали в yarn).</p>
+    <p class="next"><img class="logo-icon" src="pictures/polymer.svg" alt="Polymer"> Polymer &gt; всех по размеру и доступен только в Bower (v2 будет в yarn).</p>
 
     <p class="next"><img class="logo-icon" src="pictures/logo-skatejs.png" alt="SkateJS"> SkateJS <br>Incremental DOM, JS импорт вместо HTML импорта, живой проект</p>
 
     <p class="next"><img class="logo-icon" src="pictures/logo-x-tag.png" alt="X-tag"> X-tag и <img class="logo-icon" src="pictures/logo-bosonic.png" alt="Bosonic"> Bosonic <br>Являются заброшенными :/</p>
 
     <p class="next"><img class="logo-icon" src="pictures/logo-react.png" alt="react">
-    <img class="logo-icon" src="pictures/logo-riot.png" alt="riot">
-    <img class="logo-icon" src="pictures/logo-angular.png" alt="angular">
-    <img class="logo-icon" src="pictures/logo-vue.png" alt="vuejs"> и т.д. не используют Web Components APIs, но можно использовать компоненты в них, и их внутри компонентов.</p>
+      <img class="logo-icon" src="pictures/logo-riot.png" alt="riot">
+      <img class="logo-icon" src="pictures/logo-angular.png" alt="angular">
+      <img class="logo-icon" src="pictures/logo-vue.png" alt="vuejs"> и т.д. не используют Web Components APIs,<br> но можно использовать компоненты в них, и их внутри компонентов.</p>
 
   </section>
 
@@ -214,14 +223,14 @@
     <h2>Polymer 1.Х минусы</h2>
 
     <ul>
-      <!-- SF18 -->
       <li class="next">Cтоимость рефакторинга 0.5 to 1.X</li>
       <li class="next">Сырые утилиты</li>
-      <li class="next">Нет способа подключения внешних файлов стилей</li>
-      <li class="next">Низкая производительность 1.X (+shady dom)</li>
-      <!--  (нет арх. решения) -->
+      <!-- SF18 -->
+      <li class="next">Нет способа подключения внешних файлов стилей*</li>
+      <li class="next">Низкая производительность 1.X, из-за полифилов</li>
+      <!--  нет арх. решения -->
       <li class="next">Сложности управления состоянием</li>
-      <li class="next">Много запросов без бандлинга (http2)</li>
+      <li class="next">Много запросов без бандлинга, но http2 поможет</li>
       <li class="next">Временные проблемы между элементами соседями</li>
     </ul>
 
@@ -232,11 +241,11 @@
     <h2>Polymer 1.Х минусы</h2>
 
     <ul>
-      <li class="next">Observers вызывают событие при изменении значения с undefined на initial</li>
-      <li class="next">Нет server-side рендеринга (shadowdom)</li>
+      <li class="next">Observers вызывают событие при изменении значения <br>с <code>undefined</code> на начальное</li>
+      <li class="next">Нет <em>server-side</em> рендеринга, связано с Shadow Dom</li>
       <li class="next">Computed свойства могут просто не работать</li>
-      <li class="next">Проблемы с элементами dom-if, dom-repeat</li>
-      <li class="next">Все еще ES5, нет многих фич</li>
+      <li class="next">Проблемы с элементами <code>dom-if</code>, <code>dom-repeat</code></li>
+      <li class="next">Все еще <b>ES5</b>, нет многих фич</li>
     </ul>
 
     <a class="link-more" href="https://github.com/kbenjamin/polymer-issues" target="_blank">еще...</a>
@@ -268,7 +277,7 @@
   </section>
 
   <section class="slide">
-    <h2>Примеры, простой компонент</h2>
+    <h2>Примеры, простой Polymer компонент</h2>
 
     <pre>
       <code>&lt;dom-module id=<mark>"element-name"</mark>&gt;</code>
@@ -284,16 +293,42 @@
 
   <section class="slide">
 
+    <h2>Примеры, компонент &lt;wsd-logo&gt;</h2>
+
+    <div class="background-dark">
+      <wsd-logo color="dark" width="128px"></wsd-logo>
+      <wsd-logo color="light" width="128px"></wsd-logo>
+      <wsd-logo color="mono" width="128px"></wsd-logo>
+    </div>
+
+    <br>
+
+    <pre>
+      <code>&lt;wsd-logo color="dark" width="128px"&gt;&lt;/wsd-logo&gt;</code>
+      <code>&lt;wsd-logo color="light" width="128px"&gt;&lt;/wsd-logo&gt;</code>
+      <code>&lt;wsd-logo color="mono" width="128px"&gt;&lt;/wsd-logo&gt;</code>
+  	</pre>
+
+
+  </section>
+
+  <!-- <section class="slide"> -->
+
     <!--
       - Пример компонентов на Polymer (v1 видимые и не видимые)
       - https://www.w3.org/TR/css-scoping-1/#deep-combinator
       - https://github.com/web-standards-ru/logo
+      - contains perf fix
     -->
-    <h2>Примеры, компонент wsd-logo</h2>
+    <!-- <h2>Примеры, чиним computed свойства</h2> -->
 
-    <!-- <wsd-logo></wsd-logo> -->
+    <!-- <li class="next">Observers вызывают событие при изменении значения <br>с <code>undefined</code> на начальное</li>
+    <li class="next">Нет <em>server-side</em> рендеринга, связано с Shadow Dom</li>
+    <li class="next">Computed свойства могут просто не работать</li>
+    <li class="next">Проблемы с элементами <code>dom-if</code>, <code>dom-repeat</code></li>
+    <li class="next">Все еще <b>ES5</b>, нет многих фич</li> -->
 
-  </section>
+  <!-- </section> -->
 
   <section class="slide">
     <h2>Будущее Polymer</h2>
@@ -337,7 +372,7 @@
     <h2>Каталоги компонентов</h2>
 
     <ul>
-      <li><a href="https://elements.polymer-project.org/" target="_blank">elements.polymer-project.org</a> and <a href="https://beta.webcomponents.org" target="_blank">new beta version</a></li>
+      <li><a href="https://elements.polymer-project.org/" target="_blank">elements.polymer-project.org</a> и новая унифицированная <a href="https://beta.webcomponents.org" target="_blank">бета версия</a></li>
       <li><a href="https://customelements.io/" target="_blank">customelements.io</a></li>
       <li><a href="https://vaadin.com/elements" target="_blank">vaadin.com</a></li>
       <li><a href="http://expandjs.com/elements" target="_blank">expandjs.com</a></li>
@@ -350,14 +385,18 @@
     <h2>Ссылки</h2>
 
     <ul>
-      <li><a href="https://github.com/webcomponents/gold-standard/wiki" target="_blank">webcomponents/gold-standard</a></li>
       <li><a href="http://hayato.io/2016/shadowdomv1/" target="_blank">What's New in Shadow DOM v1 (by examples)</a></li>
-      <li><a href="https://github.com/nippur72/PolymerTS" target="_blank">PolymerTS</a></li>
-      <li><a href="https://codelabs.developers.google.com/?cat=Web" target="_blank">Google codelabs</a>, <a href="https://codelabs.developers.google.com/polymer-summit-2016" target="_blank">from Polymer Summit 2016</a></li>
-      <li><a href="https://egghead.io/courses/creating-custom-web-elements-with-polymer" target="_blank">egghead course "Creating Custom Web Elements with Polymer"</a></li>
-      <li><a href="https://github.com/tur-nr/polymer-redux" target="_blank">polymer-redux</a></li>
       <li><a href="https://developers.google.com/web/fundamentals/getting-started/primers/customelements" target="_blank">Developers Google Custom Elements v1: Reusable Web Components</a></li>
+      <li><a href="https://webkit.org/blog/7027/introducing-custom-elements/" target="_blank">WebKit Introducing Custom Elements</a></li>
+      <li><a href="https://codelabs.developers.google.com/?cat=Web" target="_blank">Google codelabs</a>, <a href="https://codelabs.developers.google.com/polymer-summit-2016" target="_blank">from Polymer Summit 2016</a></li>
+      <li><a href="https://github.com/webcomponents/gold-standard/wiki" target="_blank">webcomponents/gold-standard</a></li>
       <li><a href="https://github.com/scramjs/scram-engine" target="_blank">Server-side Web Components</a></li>
+      <li><a href="https://egghead.io/courses/creating-custom-web-elements-with-polymer" target="_blank">egghead course "Creating Custom Web Elements with Polymer"</a></li>
+      <li>Useful GitHub Projects:
+        <a href="https://github.com/nippur72/PolymerTS" target="_blank">PolymerTS</a>,
+        <a href="https://github.com/tur-nr/polymer-redux" target="_blank">polymer-redux</a>,
+        <a href="https://github.com/PixelsCommander/ReactiveElements" target="_blank">ReactiveElements</a>
+      </li>
     </ul>
 
     <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer">
@@ -368,8 +407,6 @@
 
     <p>Artur Parkhisenko</p>
     <p><a href="https://arturparkhisenko.github.io" title="GitHub profile" target="_blank">arturparkhisenko.github.io</a></p>
-    <!-- <a href="https://twitter.com/lifeasecond" title="Twitter profile"><i class="fa fa-twitter-square" aria-hidden="true"></i> @lifeasecond</a> -->
-    <p>@arturparkhisenko</p>
 
     <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer">
   </section>

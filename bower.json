@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "fontawesome#^4.7.0",
-    "polymer": "^1.7.0"
+    "polymer": "^1.7.0",
+    "wsd-logo": "^1.0.0"
   }
 }

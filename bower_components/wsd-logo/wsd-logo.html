@@ -1,0 +1,170 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`wsd-logo`
+custom-element
+
+@demo demo/index.html
+-->
+
+<dom-module id="wsd-logo">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <template is="dom-if" if="[[_isCurrenntLogo(color, 'dark')]]">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1224 1324" style$="width:[[width]]; height: auto;">
+      	<title>Веб-стандарты</title>
+      	<defs>
+      		<lineargradient id="ld1" gradientunits="userSpaceOnUse" x1="1074" y1="662" x2="1074" y2="406">
+      			<stop offset="0" stop-color="#a8cd4b"/>
+      			<stop offset="0.9" stop-color="#98c55b"/>
+      		</lineargradient>
+      		<lineargradient id="ld2" gradientunits="userSpaceOnUse" x1="1074" y1="406" x2="612" y2="150">
+      			<stop offset="0" stop-color="#98c55b"/>
+      			<stop offset="0.9" stop-color="#79b580"/>
+      		</lineargradient>
+      		<lineargradient id="ld3" gradientunits="userSpaceOnUse" x1="612" y1="150" x2="150" y2="406">
+      			<stop offset="0" stop-color="#79b580"/>
+      			<stop offset="0.8" stop-color="#5aa5a7"/>
+      		</lineargradient>
+      		<lineargradient id="ld4" gradientunits="userSpaceOnUse" x1="150" y1="406" x2="612" y2="662">
+      			<stop offset="0" stop-color="#5aa5a7"/>
+      			<stop offset="0.9" stop-color="#4a94b1"/>
+      		</lineargradient>
+      		<lineargradient id="ld5" gradientunits="userSpaceOnUse" x1="612" y1="662" x2="612" y2="1174">
+      			<stop offset="0" stop-color="#4a94b1"/>
+      			<stop offset="0.8" stop-color="#49839f"/>
+      		</lineargradient>
+      		<lineargradient id="ld6" gradientunits="userSpaceOnUse" x1="1074" y1="918" x2="612" y2="1174">
+      			<stop offset="0" stop-color="#466d85"/>
+      			<stop offset="0.7" stop-color="#49839f"/>
+      		</lineargradient>
+      		<lineargradient id="ld7" gradientunits="userSpaceOnUse" x1="612" y1="1174" x2="150" y2="918">
+      			<stop offset="0.3" stop-color="#49839f"/>
+      			<stop offset="0.9" stop-color="#47728b"/>
+      		</lineargradient>
+      		<lineargradient id="ld8" gradientunits="userSpaceOnUse" x1="150" y1="918" x2="150" y2="662">
+      			<stop offset="0" stop-color="#47728b"/>
+      			<stop offset="1" stop-color="#456a81"/>
+      		</lineargradient>
+      	</defs>
+      	<g stroke-width="120" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      		<polygon stroke="white" stroke-width="300" fill="white" points="1074,406 612,150 150,406 150,918 612,1174 1074,918"/>
+      		<polyline stroke="url(#ld1)" points="1074,662 1074,406"/>
+      		<polyline stroke="url(#ld2)" points="1074,406 612,150"/>
+      		<polyline stroke="url(#ld3)" points="612,150 150,406"/>
+      		<polyline stroke="url(#ld4)" points="150,406 612,662"/>
+      		<polyline stroke="url(#ld5)" points="612,662 612,1174"/>
+      		<polyline stroke="url(#ld6)" points="1074,918 612,1174"/>
+      		<polyline stroke="url(#ld7)" points="612,1174 150,918"/>
+      		<polyline stroke="url(#ld8)" points="150,918 150,662"/>
+      	</g>
+      </svg>
+
+    </template>
+
+    <template is="dom-if" if="[[_isCurrenntLogo(color, 'light')]]">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1044 1144"  style$="width:[[width]]; height: auto;">
+        <title>Веб-стандарты</title>
+        <defs>
+          <lineargradient id="l1" gradientunits="userSpaceOnUse" x1="984" y1="572" x2="984" y2="316">
+            <stop offset="0" stop-color="#a8cd4b"/>
+            <stop offset="0.9" stop-color="#98c55b"/>
+          </lineargradient>
+          <lineargradient id="l2" gradientunits="userSpaceOnUse" x1="984" y1="316" x2="522" y2="60">
+            <stop offset="0" stop-color="#98c55b"/>
+            <stop offset="0.9" stop-color="#79b580"/>
+          </lineargradient>
+          <lineargradient id="l3" gradientunits="userSpaceOnUse" x1="522" y1="60" x2="60" y2="316">
+            <stop offset="0" stop-color="#79b580"/>
+            <stop offset="0.8" stop-color="#5aa5a7"/>
+          </lineargradient>
+          <lineargradient id="l4" gradientunits="userSpaceOnUse" x1="60" y1="316" x2="522" y2="572">
+            <stop offset="0" stop-color="#5aa5a7"/>
+            <stop offset="0.9" stop-color="#4a94b1"/>
+          </lineargradient>
+          <lineargradient id="l5" gradientunits="userSpaceOnUse" x1="522" y1="572" x2="522" y2="1084">
+            <stop offset="0" stop-color="#4a94b1"/>
+            <stop offset="0.8" stop-color="#49839f"/>
+          </lineargradient>
+          <lineargradient id="l6" gradientunits="userSpaceOnUse" x1="984" y1="828" x2="522" y2="1084">
+            <stop offset="0" stop-color="#466d85"/>
+            <stop offset="0.7" stop-color="#49839f"/>
+          </lineargradient>
+          <lineargradient id="l7" gradientunits="userSpaceOnUse" x1="522" y1="1084" x2="60" y2="828">
+            <stop offset="0.3" stop-color="#49839f"/>
+            <stop offset="0.9" stop-color="#47728b"/>
+          </lineargradient>
+          <lineargradient id="l8" gradientunits="userSpaceOnUse" x1="60" y1="828" x2="60" y2="572">
+            <stop offset="0" stop-color="#47728b"/>
+            <stop offset="1" stop-color="#456a81"/>
+          </lineargradient>
+        </defs>
+        <g stroke-width="120" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <polyline stroke="url(#l1)" points="984,572 984,316"/>
+          <polyline stroke="url(#l2)" points="984,316 522,60"/>
+          <polyline stroke="url(#l3)" points="522,60 60,316"/>
+          <polyline stroke="url(#l4)" points="60,316 522,572"/>
+          <polyline stroke="url(#l5)" points="522,572 522,1084"/>
+          <polyline stroke="url(#l6)" points="984,828 522,1084"/>
+          <polyline stroke="url(#l7)" points="522,1084 60,828"/>
+          <polyline stroke="url(#l8)" points="60,828 60,572"/>
+        </g>
+      </svg>
+
+    </template>
+
+    <template is="dom-if" if="[[_isCurrenntLogo(color, 'mono')]]">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1044 1144" style$="width:[[width]]; height: auto;">
+        <title>Веб-стандарты</title>
+        <g stroke="black" stroke-width="120" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <polyline points="984,572 984,316"/>
+          <polyline points="984,316 522,60"/>
+          <polyline points="522,60 60,316"/>
+          <polyline points="60,316 522,572"/>
+          <polyline points="522,572 522,1084"/>
+          <polyline points="984,828 522,1084"/>
+          <polyline points="522,1084 60,828"/>
+          <polyline points="60,828 60,572"/>
+        </g>
+      </svg>
+
+    </template>
+
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'wsd-logo',
+
+      properties: {
+
+        color: {
+          type: String,
+          value: 'dark',
+          reflectToAttribute: true
+        },
+
+        width: {
+          type: String,
+          value: '360px',
+          reflectToAttribute: true
+        }
+
+      },
+
+      _isCurrenntLogo: function(currentColor, color) {
+        return currentColor === color;
+      }
+
+    });
+  </script>
+</dom-module>
