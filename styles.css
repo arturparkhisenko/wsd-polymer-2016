@@ -209,3 +209,7 @@ wsd-logo {
   margin: 10px;
   display: inline-block;
 }
+
+.img-mw-max {
+  max-width: 100%;
+}

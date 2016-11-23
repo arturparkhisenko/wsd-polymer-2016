@@ -38,9 +38,9 @@ class MyElement extends Polymer.Element {
     }
   }
 
-  // ready() {
-  //   console.log('ready');
-  // }
+  attributeChangedCallback(attrName, oldVal, newVal) {
+    console.log(attrName, oldVal, newVal);
+  }
 
   //...
 }

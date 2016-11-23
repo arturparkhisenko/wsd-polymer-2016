@@ -2,7 +2,8 @@
 <html>
 
 <head>
-  <title>polymer</title>
+  <meta charset="UTF-8">
+  <title>x-test</title>
   <script src="https://polygit.org/components/webcomponentsjs/webcomponents-lite.min.js"></script>
   <link href="https://polygit.org/components/polymer/polymer.html" rel="import">
   <!-- <base href="https://crossorigin.me/https://polygit.org/polymer+:master/components/"> -->
@@ -13,16 +14,16 @@
 
   <dom-module id="x-test">
     <template>
-        <style>
-        </style>
-        <div id="test">Test</div>
+        <style></style>
+        <div>x-test</div>
       </template>
   </dom-module>
 
+  <script>Polymer({ is: 'x-test' });</script>
+
+  <x-test></x-test>
+  
   <script>
-    Polymer({
-      is: 'x-test'
-    });
     var el = document.querySelector('x-test');
     console.log('Props:');
     for (var k in el) {
@@ -30,8 +31,6 @@
         console.log(k);
     }
   </script>
-
-  <x-test></x-test>
 </body>
 
 </html>
