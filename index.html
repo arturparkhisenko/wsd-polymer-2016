@@ -38,8 +38,8 @@
   <section class="slide slide-ls livestream-mission">
     <img class="livestream-logo" src="pictures/livestream-logo-inverted.svg" alt="Livestream Logo">
 
-    <h3>Наша миссия</h3>
-    <br>
+    <h2>Наша миссия</h2>
+
     <p>Мы обеспечиваем онлайн-трансляции</p>
     <hr>
     <p>Мы сближаем тебя с окружающими, превращая каждое событие в бесценный опыт.</p>
@@ -49,17 +49,23 @@
 
   <section class="slide slide-ls project-webcontrol">
     <img class="livestream-logo" src="pictures/livestream-logo-inverted.svg" alt="Livestream">
-    <h3>Проект Livestream Studio Webсontrol</h3>
+    <h2>Проект Livestream Studio Webсontrol</h2>
 
     <p>Часть Livestream Studio, позволяющая управлять приложением с помощью веб-браузера из любой точки мира</p>
 
     <br>
-    <br>
 
     <div class="webcontrol-cloud">
       <img src="pictures/webcontrol-cloud.png" alt="Web Control WebRTC Cloud">
-      <br> Используя WebRTC
+      <span>Используя WebRTC</span>
     </div>
+
+    <img class="cover" src="pictures/livestream-bg.png" alt="livestream-cover">
+  </section>
+
+  <section class="slide slide-ls project-webcontrol">
+    <img class="livestream-logo" src="pictures/livestream-logo-inverted.svg" alt="Livestream">
+    <h2>Проект Livestream Studio Webсontrol</h2>
 
     <img class="webcontrol-screenshot" src="pictures/screenshot-1.png" alt="Web Control">
 
@@ -79,7 +85,7 @@
   </section>
 
   <section class="slide slide-web-components">
-    <h2>Под капотом у тега &lt;video&gt;</h2>
+    <h2>Под "капотом" у тега &lt;video&gt;</h2>
     <img class="cover" src="pictures/video-example.png" alt="video-example">
   </section>
 
@@ -168,21 +174,27 @@
 
     <br>
 
-    <p class="next"><strong>Проект Polymer</strong> - это набор библиотек и утилит для веб-разработчиков.</p>
+    <p class="next"><strong>Проект Polymer</strong> - это набор библиотек и утилит для <br>веб-разработчиков.</p>
 
-    <p class="next">Библиотека Polymer созданная для того, чтобы упростить работу с нативными API веб-платформы.</p>
+    <p class="next"><strong>Библиотека Polymer</strong> создана для того, чтобы упростить работу с нативными API веб-платформы.</p>
+
+    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
+  </section>
+
+  <section class="slide slide-polymer-utils-1">
+    <h2>Polymer утилиты</h2>
+
+    <p class="next"><strong>Polymer App Toolbox</strong> - это коллекция готовых веб-компонентов, утилит и шаблонов для создания <br><em>Прогрессивных Веб Приложений</em> с библиотекой Polymer <br>(роутинг, локализация, хранилище, лэйауты, polygit-cdn).</p>
+
+    <p class="next"><strong>Отдельные утилиты:</strong> polyserve, polylint, Web component tester, polybuild (vulcanize, crisper, polyclean).</p>
 
     <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
   </section>
 
   <section class="slide">
-    <h2>Polymer утилиты и Polymer-cli</h2>
+    <h2>Polymer утилиты</h2>
 
-    <p class="next"><strong>Polymer App Toolbox</strong> - это коллекция готовых веб-компонентов, утилит и шаблонов для создания <em>Прогрессивных Веб Приложений</em> с библиотекой Polymer (пример: роутинг, локализация, хранилище, лэйауты, polygit-cdn).</p>
-
-    <p class="next"><strong>Polymer-cli</strong> - консольная утилита, которая включает в себя инструменты сборки, генерации, линтер, сервер для разработки и тест раннер.</p>
-
-    <p class="next">Дополнительные инструменты Polymer, такие как: polyserve, polylint, Web component tester, polybuild (vulcanize, crisper, polyclean).</p>
+    <p class="next description-polymer-cli"><strong>Polymer-cli</strong> - консольная утилита, которая включает в себя инструменты сборки, генерации, линтер, сервер для разработки и платформу для тестирования.</p>
 
     <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
   </section>
@@ -192,7 +204,7 @@
     <img class="cover" src="pictures/logo-deck.png" alt="logo-deck">
   </section>
 
-  <section class="slide">
+  <section class="slide font-lines-3">
     <h2>Polymer подход</h2>
 
     <ul>
@@ -205,7 +217,7 @@
   </section>
 
   <section class="slide">
-    <p class="source-link">Source: <a href="https://youtu.be/8ZTFEhPBJEE" target="_blank">youtu.be/8ZTFEhPBJEE</a></p>
+    <span class="link-more">Source: <a href="https://youtu.be/8ZTFEhPBJEE" target="_blank">youtu.be/8ZTFEhPBJEE</a></span>
     <img class="cover" src="pictures/usetheplatform.png" alt="use the platform">
   </section>
 
@@ -230,11 +242,11 @@
 
     <ul>
       <li class="next">Низкая производительность, из-за полифилов</li>
-      <li class="next">Сырые утилиты</li>
+      <li class="next">"Сырые" утилиты</li>
       <li class="next">Нет способа подключения внешних файлов стилей</li>
-      <li class="next">Много запросов без бандлинга, но http2 поможет</li>
+      <li class="next">Много запросов без бандлинга (http2 поможет)</li>
       <li class="next">Сложности управления состоянием</li>
-      <li class="next">Нет <em>server-side</em> рендеринга, связано с Shadow Dom</li>
+      <li class="next">Нет <em>server-side</em> рендеринга (связано с Shadow Dom)</li>
       <li class="next">Computed свойства могут просто не работать</li>
       <li class="next">Проблемы с элементами <code>dom-if</code>, <code>dom-repeat</code></li>
       <!-- <li class="next">Observers вызывают событие при изменении значения <br>с <code>undefined</code> на начальное</li>
@@ -266,7 +278,7 @@
   </section>
 
   <section class="slide">
-    <h2>Пример, простой Polymer компонент</h2>
+    <h2>Пример: простой Polymer компонент</h2>
 
     <pre>
       <code>&lt;dom-module id=<mark>"element-name"</mark>&gt;</code>
@@ -284,7 +296,7 @@
 
   <section class="slide">
 
-    <h2>Пример, компонент &lt;wsd-logo&gt;</h2>
+    <h2>Пример: компонент &lt;wsd-logo&gt;</h2>
 
     <div class="background-dark">
       <wsd-logo color="dark" width="128px"></wsd-logo>
@@ -303,21 +315,21 @@
   </section>
 
   <section class="slide">
-    <h2>Пример, связывание атрибутов и свойств</h2>
+    <h2>Пример: связывание атрибутов и свойств</h2>
 
     <pre>
       <code>&lt;template&gt;</code>
       <code>  <span class="comment">&lt;!-- Атрибуты --&gt;</span></code>
-      <code>  &lt;my-element selected$="[[value]]"&gt;&lt;/my-element&gt;</code>
+      <code>  &lt;my-element selected<mark>$=</mark>"[[value]]"&gt;&lt;/my-element&gt;</code>
       <code>  <span class="comment">&lt;!-- Свойства --&gt;</span></code>
-      <code>  &lt;my-element selected="{{value}}"&gt;&lt;/my-element&gt;</code>
+      <code>  &lt;my-element selected<mark>=</mark>"{{value}}"&gt;&lt;/my-element&gt;</code>
       <code>&lt;/template&gt;</code>
   	</pre>
 
   </section>
 
   <section class="slide">
-    <h2>Пример, CSS Scoping, важные селекторы</h2>
+    <h2>Пример: CSS Scoping, важные селекторы</h2>
 
     <pre>
       <code>&lt;style&gt;</code>
@@ -333,7 +345,7 @@
   </section>
 
   <section class="slide">
-    <h2>Пример, дополнительная изоляция с помощью CSS Containment</h2>
+    <h2>Пример: дополнительная изоляция с помощью CSS Containment</h2>
     <p>CSS свойство, позволяющее разработчикам ограничить область применения стилей, компоновок и отрисовок для браузера.</p>
     <pre>
       <code>contain: strict; <span class="comment">/* === layout style paint size */</span></code>
@@ -350,13 +362,13 @@
 
     <ul>
       <li class="next">Polymer 0.5 как эксперимент</li>
-      <li class="next">Polymer 1.0 продакшн реди версия</li>
+      <li class="next">Polymer 1.0+ продакшн версия</li>
     </ul>
 
     <h3 class="next">Polymer 2.0 нативный веб</h3>
 
     <ul>
-      <li class="next">Поддержка веб-компонентов версии 1</li>
+      <li class="next">Поддержка веб-компонентов версии 1.X</li>
       <li class="next">Плавный переход на новую версию (гибридный режим)</li>
       <li class="next">Улучшенная совместимость с нативным вебом</li>
       <li class="next">Маленький размер ~12кб (Polymer.Element)</li>
@@ -375,7 +387,7 @@
       <li><b>Independent</b> - не имеет зависимостей</li>
       <li><b>Reusable</b> - больше гибкости, меньше кода, композиция</li>
       <li><b>Small</b> - проще поддерживать и документировать, меньше ответственности</li>
-      <li><b>Testable</b> - легче тестировать, более точно будет определен компонент, который приводит к ошибке</li>
+      <li><b>Testable</b> - легче тестировать, более точное определение компонента, приводящего к ошибке</li>
     </ul>
 
     <a class="link-more" href="https://addyosmani.com/first/" target="_blank">addyosmani.com/first</a>
@@ -422,13 +434,20 @@
     <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
   </section>
 
-  <section class="slide">
+  <section class="slide font-lines-3">
     <h2>Вопросы?</h2>
 
-    <p>Artur Parkhisenko</p>
-    <p><a href="https://arturparkhisenko.github.io" title="GitHub profile" target="_blank">arturparkhisenko.github.io</a></p>
+    <!-- TODO add photo, to the right side -->
+    <img class="photo" src="pictures/logos/logo-cerberus.png" alt="photo Artur Parkhisenko">
 
-    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
+    <p>Artur Parkhisenko
+      <br>
+      www <a href="https://arturparkhisenko.github.io" title="GitHub profile" target="_blank">arturparkhisenko.github.io</a>
+      <br>
+      twitter <a href="https://twitter.com/lifeasecond" title="GitHub profile" target="_blank">@lifeasecond</a>
+    </p>
+
+    <span class="link-more">Ссылка на презентацию: <a href="https://arturparkhisenko.github.io/wsd-polymer-2016/" target="_blank">arturparkhisenko.github.io/wsd-polymer-2016/</a></span>
   </section>
 
   <p class="badge">

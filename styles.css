@@ -96,20 +96,20 @@ h3 {
 }
 /*slide-ls*/
 .slide-ls,
-.slide-ls h3 {
+.slide-ls h2 {
   color: #fff;
 }
 
 .slide-ls .cover {
-  filter: brightness(0.4);
+  filter: brightness(0.2);
 }
 
 .slide-ls .livestream-logo {
   position: absolute;
-  top: 10px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 200px;
+  width: 320px;
   height: auto;
 }
 
@@ -117,12 +117,18 @@ h3 {
   text-align: center;
 }
 
-.livestream-mission h3 {
-  font-size: 46px;
+.livestream-mission h2 {
+  font-size: 70px;
+  margin-top: 40px;
 }
 
-.livestream-mission p {
-  font-size: 36px;
+.livestream-mission p:first-of-type {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.livestream-mission p:last-of-type {
+  font-size: 38px;
 }
 
 .livestream-mission hr {
@@ -135,19 +141,27 @@ h3 {
   margin-bottom: 16px;
 }
 
-.project-webcontrol {}
+.project-webcontrol p {
+  font-size: 46px;
+}
 
 .webcontrol-cloud {
-  display: inline-block;
-  text-align: center;
-  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
 }
 
 .webcontrol-screenshot {
   position: absolute;
-  bottom: 0;
-  right: 10px;
-  width: 545px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 970px;
   height: auto;
 }
 /*slide-web-components*/
@@ -171,8 +185,13 @@ h3 {
   text-align: right;
 }
 
+.font-lines-3 p,
+.font-lines-3 ul {
+  font-size: 45px;
+}
+
 .cover-logo-polymer {
-  opacity: 0.1;
+  opacity: 0.03;
   z-index: -1;
 }
 
@@ -198,6 +217,13 @@ h3 {
   font-size: 20px;
 }
 
+.photo {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  width: 220px;
+  height: auto;
+}
 /*wsd-logo*/
 .background-dark {
   background-color: #eee;
@@ -212,4 +238,16 @@ wsd-logo {
 
 .img-mw-max {
   max-width: 100%;
+}
+
+.description-polymer-cli {
+  font-size: 40px;
+}
+
+.slide-project-polymer p {
+  font-size: 30px;
+}
+
+.slide-polymer-utils-1 p {
+  font-size: 30px;
 }
