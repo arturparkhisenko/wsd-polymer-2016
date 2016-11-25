@@ -251,3 +251,20 @@ wsd-logo {
 .slide-polymer-utils-1 p {
   font-size: 30px;
 }
+
+.slide-catalogues li {
+  font-size: 38px;
+}
+
+.slide-polymer-cons-1 li {
+  font-size: 30px;
+}
+
+.slide-polymer-cons-2 a,
+.slide-polymer-cons-2 li {
+  font-size: 34px;
+}
+
+.slide-year-after li {
+  font-size: 30px;
+}
