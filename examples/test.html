@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>x-test</title>
-  <script src="https://polygit.org/components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <script src="https://polygit.org/components/webcomponentsjs/webcomponents-lite.js"></script>
   <link href="https://polygit.org/components/polymer/polymer.html" rel="import">
-  <!-- <base href="https://crossorigin.me/https://polygit.org/polymer+:master/components/"> -->
-  <!-- <link href="polymer/polymer.html" rel="import"> -->
+  <!-- <script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script> -->
+  <!-- <link href="../bower_components/polymer/polymer.html" rel="import"> -->
 </head>
 
 <body>
@@ -22,7 +22,7 @@
   <script>Polymer({ is: 'x-test' });</script>
 
   <x-test></x-test>
-  
+
   <script>
     var el = document.querySelector('x-test');
     console.log('Props:');

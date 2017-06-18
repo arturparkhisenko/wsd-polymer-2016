@@ -1,10 +1,10 @@
 const del = require('del');
-const fs = require('fs');
+// const fs = require('fs');
 const gulp = require('gulp');
 const merge = require('merge-stream');
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
-const rsync = require('gulp-rsync');
+// const rsync = require('gulp-rsync');
 const sequence = require('run-sequence');
 const zip = require('gulp-zip');
 const pages = require('gulp-gh-pages');

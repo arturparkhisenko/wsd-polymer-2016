@@ -3,10 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Polymer 2.0.0-preview</title>
-  <base href="https://polygit.org/polymer+:2.0-preview/components/">
-  <script src="webcomponentsjs/webcomponents-lite.min.js"></script>
-  <link href="polymer/polymer-element.html" rel="import">
+  <title>Polymer 2 Element</title>
+  <!-- <base href="https://polygit.org/polymer+:2.0-preview/components/"> -->
+  <!-- <script src="webcomponentsjs/webcomponents-lite.min.js"></script> -->
+  <!-- <link rel="import" href="polymer/polymer-element.html"> -->
+  <script src="https://polygit.org/webcomponentsjs+1.0.0/components/webcomponentsjs/webcomponents-loader.js"></script>
+  <link rel="import"  href="https://polygit.org/components/polymer/polymer-element.html">
 </head>
 
 <body>
@@ -21,16 +23,13 @@
         return 'my-element';
       }
 
-      static get config() {
+      static get properties() {
         return {
-          /* properties, observers meta data */
-          properties: {
-            foo: {
-              type: String,
-              value: 'hello'
-            }
+          foo: {
+            type: String,
+            value: 'hello'
           }
-        }
+        };
       }
 
       // constructor() {
