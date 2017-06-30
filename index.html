@@ -129,6 +129,21 @@
   </section>
 
   <section class="slide slide-project-polymer">
+    <h2>Новое и особенности веб-компонентов:</h2>
+    <ul>
+      <li>Их имена начинаются с <b>маленькой буквы из ASCII</b> и содержат <b>-</b></li>
+      <li>Расширился Event интерфейс, теперь есть <b>Event.path</b></li>
+      <li>Новые CSS псевдо-классы: <b>:unresolved</b>, <b>:host()</b>, <b>:host-context()</b></li>
+      <li>Новый элемент: <b>&lt;template&gt;</b>, и API интерфейс <b>HTMLTemplateElement</b></li>
+      <li>WebComponentsReady / <b>HTMLImports.whenReady (native)</b>*</li>
+      <li><b>customElements</b>.define(name, constructor, options);</li>
+      <li><b>&lt;script type="module"&gt;</b> - как пакет компонента</li>
+      <li>Можно наследовать нативные элементы, но пока это ненормативно.</li>
+    </ul>
+    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
+  </section>
+
+  <section class="slide slide-project-polymer">
     <h2>Проект и библиотека Polymer</h2>
 
     <h3>Используйте веб-платформу, чтобы сделать веб лучше</h3>
@@ -260,6 +275,19 @@
   </section>
 
   <section class="slide">
+    <h2>Жизненный цикл компонентов</h2>
+    <ul>
+      <li><code>created / <mark>constructor (native)</mark></code></li>
+      <li><code>ready</code></li>
+      <li><code>attached / <mark>connectedCallback (native)</mark></code></li>
+      <li><code>detached / <mark>disconnectedCallback (native)</mark></code></li>
+      <li><code>attributeChanged / <mark>attributeChangedCallback (native)</mark></code></li>
+      <li><code>adoptedCallback</code></li>
+    </ul>
+    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
+  </section>
+
+  <section class="slide">
     <h2>Пример: простой Polymer v1 компонент</h2>
 
     <pre>
@@ -273,6 +301,8 @@
   	</pre>
 
     <a class="link-more" href="http://ragingwind.me/polymer-samples/" target="_blank">Много примеров для Polymer 1.X</a>
+
+    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
 
   </section>
 
@@ -288,6 +318,8 @@
       <code>  &lt;/script&gt;</code>
       <code>&lt;/dom-module&gt;</code>
   	</pre>
+
+    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
 
   </section>
 
@@ -309,6 +341,8 @@
       <code>&lt;wsd-logo color="mono" width="128px"&gt;&lt;/wsd-logo&gt;</code>
   	</pre>
 
+    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
+
   </section>
 
   <section class="slide">
@@ -322,6 +356,8 @@
       <code>  &lt;my-element selected <mark class="important">=</mark> "<mark>{{value}}</mark>"&gt;&lt;/my-element&gt;</code>
       <code>&lt;/template&gt;</code>
   	</pre>
+
+    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
 
   </section>
 
@@ -339,6 +375,8 @@
       <code>&lt;/style&gt;</code>
   	</pre>
 
+    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
+
   </section>
 
   <section class="slide">
@@ -351,6 +389,8 @@
 
     <a class="link-more" href="https://habrahabr.ru/post/309042/" target="_blank">habr пост о CSS Containment</a>
     <!--<a class="link-more" href="https://developers.google.com/web/updates/2016/06/css-containment" target="_blank">Статья о CSS Containment</a>-->
+
+    <img class="cover-logo-polymer cover" src="pictures/polymer.svg" alt="Polymer-cover">
 
   </section>
 
@@ -437,10 +477,8 @@
     <img class="photo" src="pictures/artur-parkhisenko.png" alt="photo Artur Parkhisenko">
 
     <p>Artur Parkhisenko
-      <br>
-      www <a href="https://arturparkhisenko.github.io" title="GitHub profile" target="_blank">arturparkhisenko.github.io</a>
-      <br>
-      twitter <a href="https://twitter.com/lifeasecond" title="GitHub profile" target="_blank">@lifeasecond</a>
+      <br> site <a href="https://arturparkhisenko.github.io" title="GitHub profile" target="_blank">arturparkhisenko.github.io</a>
+      <br> twitter <a href="https://twitter.com/lifeasecond" title="GitHub profile" target="_blank">@lifeasecond</a>
     </p>
 
     <span class="link-more">Ссылка на презентацию: <a href="https://arturparkhisenko.github.io/wsd-polymer-2016/" target="_blank">arturparkhisenko.github.io/wsd-polymer-2016/</a></span>
